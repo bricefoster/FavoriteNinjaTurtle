@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ninja Turtles</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="jumbotron">
+                    <h1>
+                        Favorite Ninja Turtle
+                    </h1>
+                    <p>
+                        Fill out the form below to choose your favorite Ninja Turtle.
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="info">
+          
+               <form role="form">
+                   <div class="form-group">
+                   <label>Enter Your Name</label><br />
+                   <input type="text" class="form-control" id="name" />
+                   </div>
+
+                   <div class="form-group">
+                <label>Choose your favorite Ninja Turtle</label><br />
+                <select class="form-control" id="turtle">
+                    <option></option>
+                    <option>Leonardo</option>
+                    <option>Donatello</option>
+                    <option>Michelangelo</option>
+                    <option>Raphael</option>
+                </select>
+                       </div>
+                   <div class="form-group">
+                   <button class="btn btn-default" onclick="ninja.create();" id="submit">Enter</button>
+                   <button class="hidden" onclick="ninja.save();" id="save">Save</button>                    
+                    </div>
+            </form>
+           
+           
+        </div>
+        <div id="images">
+
+        </div>
+        <div id="table">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
